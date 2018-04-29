@@ -604,7 +604,7 @@ class AndroidBuilder(object):
             if project_name is None:
                 # use default project name
                 project_name = 'app'
-            gen_apk_folder = os.path.join(self.app_android_root, 'app/build/outputs/apk')
+            gen_apk_folder = os.path.join(self.app_android_root, 'app/build/outputs/apk/release')
         else:
             assets_dir = os.path.join(self.app_android_root, "assets")
             project_name = self._xml_attr(self.app_android_root, 'build.xml', 'project', 'name')
